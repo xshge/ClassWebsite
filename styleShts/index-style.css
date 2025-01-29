@@ -2,6 +2,98 @@ body {
     background-color: #160E0C;
 }
 
+.fldr-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.summary {
+
+    width: 100vw;
+    padding: 10px;
+}
+
+#sum-one {
+    display: none;
+    opacity: 0;
+    transition-property: display opacity;
+    transition-duration: 1s;
+    transition-behavior: allow-discrete ease;
+}
+
+.sum-content {
+    border: solid #DED1B7;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#fldr-one:hover~#sum-one {
+    display: block;
+    opacity: 1;
+
+    @starting-style {
+        opacity: 0;
+
+    }
+}
+
+.right {
+    float: right;
+    margin-right: 5vw;
+    width: fit-content;
+    height: max-content;
+    /* position:relative; */
+
+}
+
+.left {
+
+    margin-left: 5vw;
+    width: fit-content;
+    height: max-content;
+}
+
+#genTl {
+    anchor-name: --gentool;
+}
+
+#chSt {
+    anchor-name: --changing;
+}
+
+#sR {
+    anchor-name: --sender;
+}
+
+.font {
+    width: 20vw;
+    height: auto;
+    z-index: 0
+}
+
+.S {
+    position-anchor: --sender;
+    left: calc(anchor(center) - 120px);
+    top: -80px;
+}
+
+.T {
+
+    position-anchor: --gentool;
+    left: calc(anchor(center) - 120px);
+    top: -30px;
+}
+
+.C {
+    position-anchor: --changing;
+    right: anchor(--changing right, 10%);
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+}
+
 .flx {
     width: auto;
     height: auto;
@@ -11,12 +103,21 @@ body {
 }
 
 img {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .folder {
-    background-image: url(/Assets/GrnRect.jpg);
+    /* background-image: url(/Assets/GrnRect.jpg); */
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    margin-top: -21px;
+    overflow: hidden;
+
     /*now the image will need to fit around the content and not the other around*/
 }
 
@@ -38,6 +139,12 @@ img {
     line-height: normal;
 }
 
+.GW {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .noMg {
     margin: 0px;
 
@@ -48,8 +155,29 @@ img {
     margin-bottom: 40px;
 }
 
+.Mgb {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
 .frFT {
     font-size: 40px;
+}
+
+.two {
+    margin-top: 0px;
+}
+
+.prFt {
+    font-size: 36px;
+}
+
+.lRed {
+    color: #C66D65;
+}
+
+.blu {
+    color: #5E979C;
 }
 
 .wht {
