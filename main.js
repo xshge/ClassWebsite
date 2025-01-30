@@ -6,7 +6,8 @@ document.getElementById("chSt").addEventListener("mouseover", function () {
 
     sum.style.display = "block";
     sum.style.opacity = "1";
-
+    document.querySelector(".C").style.transform = "scale(0.7)";
+    document.querySelector(".C").style.bottom = "anchor(bottom)";
 
 })
 
@@ -17,6 +18,8 @@ document.getElementById("chSt").addEventListener("mouseout", function () {
     if (sum.style.display == "block") {
         sum.style.display = "none";
         sum.style.opacity = "0";
+        document.querySelector(".C").style.transform = "scale(1)";
+
     }
 
 

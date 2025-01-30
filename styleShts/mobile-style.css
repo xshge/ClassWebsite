@@ -1,0 +1,80 @@
+@media screen and (max-width: 500px),
+(aspect-ratio: 16/9) {
+
+
+    .flx {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .folders {
+        flex-direction: row;
+    }
+
+    .summary {
+        width: inherit;
+        height: fit-content;
+    }
+
+    .fldr-container {
+        min-width: 20vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .fldr-containerL {
+        min-width: 20vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .folder {
+        height: 100vh;
+    }
+
+    .font {
+        width: 65vw;
+        height: 70vh;
+    }
+
+    .right {
+        margin: 5vw;
+
+    }
+
+    .left {
+        margin: 5vw;
+    }
+
+    .C {
+        top: calc(anchor(--changing bottom) + 50px);
+        left: calc(anchor(--changing right) - 95px);
+    }
+
+    .T {
+        top: calc(anchor(bottom) + 50px);
+        left: calc(anchor(right) - 120px);
+    }
+
+    .S {
+        top: calc(anchor(bottom) + 50px);
+        left: calc(anchor(right) - 100px);
+    }
+
+    .MgB {
+        margin-bottom: 20px;
+    }
+
+    .klT {
+        font-size: 40px;
+    }
+
+    .frFT {
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
